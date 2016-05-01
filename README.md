@@ -2,6 +2,13 @@
 
 * 2016-05-01　起動時にbashrcを読み込むように修正
 
+#pythonのコードを実行するとき
+
+```
+$workon uec
+(uec)XXXXX$ipython
+```
+
 #workonのコマンドが使えない時
 
 ```
@@ -20,12 +27,6 @@ fi
 ```
 初期の状態では.bash_profileはないので新規で作成して記述してください
 
-#pythonのコードを実行するとき
-
-```
-$workon uec
-(uec)XXXXX$ipython
-```
 
 #新しく仮想環境を作るとき
 
