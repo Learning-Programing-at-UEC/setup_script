@@ -30,7 +30,7 @@ fi
 
 #新しく仮想環境を作るとき
 
-python3での環境小蓄冷
+python3での構築例
 ```
 mkvirtualenv --python=`which python3` 好きな名前
 ```
