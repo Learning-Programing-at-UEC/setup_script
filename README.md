@@ -1,5 +1,7 @@
 # setup_script
 
+* 2016-05-01　起動時にbashrcを読み込むように修正
+
 #workonのコマンドが使えない時
 
 ```
@@ -8,9 +10,10 @@ source .bashrc
 
 #起動時に自動的にbachrcを読み込むようにする方法
 
-```
+
 .bash_profileに以下の内容を追加
 
+```
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
