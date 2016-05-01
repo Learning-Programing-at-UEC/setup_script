@@ -26,3 +26,22 @@ fi
 $workon uec
 (uec)XXXXX$ipython
 ```
+
+#新しく仮想環境を作るとき
+
+python3での環境小蓄冷
+```
+mkvirtualenv --python=`which python3` 好きな名前
+```
+
+python2での構築例
+
+```
+mkvirtualenv 好きな名前
+```
+
+#仮想環境からログアウト
+
+```
+$deactivate
+```
