@@ -10,11 +10,18 @@ brew install python3
 pip install virtualenv
 pip install virtualenvwrapper
 
+cat <<EOF > ~/.bash_profile
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+EOF
+
 cat <<EOF > ~/.bashrc
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 EOF
 
-source .bashrc
+source ~/.bashrc
+cd ~
 mkvirtualenv --python=`which python3` uec
 pip install ipython
