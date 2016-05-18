@@ -5,8 +5,10 @@
 # python3専用の開発環境を構築します
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
 brew install python
 brew install python3
+brew link --overwrite python
 pip install virtualenv
 pip install virtualenvwrapper
 
